@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Create</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="content">
+        <div>
+            <h2>Create and upload your code</h2>
+        </div>
+        <div>
+            <textarea id=code_snippet>// Write your code here ...</textarea>
+        </div>
+        <div  class="item">
+            <label>Time that the code will be available (in seconds):</label>
+            <input id="time_restriction" type="text" value="0"/>
+        </div>
+        <div class="item">
+            <label>Number of times that the code can be viewed:</label>
+            <input id="views_restriction" type="text" value="0"/>
+        </div>
+        <div>
+            <button id=send_snippet class="button-secondary" type=submit onclick=send()>Submit</button>
+        </div>
+    </div>
+    <div>
+        <footer>
+
+            <ul class="social-links">
+                <p class="copyright"><small>&copy; <time datetime="2021-12-20">2021</time> - Code Sharing Platform - Developed by Caio Tayota</small></p>
+                <li>
+                    <a href="https://github.com/caiotayota" target="_blank">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/caiotayota/" target="_blank">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+</div>
+
+<script type=text/javascript src="/main.js"></script>
+<script src="https://kit.fontawesome.com/54f159ba8f.js" crossorgin="anonymous"></script>
+
+</body>
+</html>

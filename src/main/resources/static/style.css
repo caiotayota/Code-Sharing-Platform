@@ -1,0 +1,96 @@
+:root {
+    --blue: rgb(0, 13, 49);
+    --black: #222222;
+}
+
+body {
+    background: var(--blue);  
+    flex-direction: row;
+}
+
+button {
+    margin-top: 20px;
+    color: white;
+    border-radius: 8px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(0, 13, 49);
+    width: 80px;
+    height: 35px;
+    font-size: medium;
+}
+
+button:hover {
+    background: rgb(74, 120, 245);
+    text-shadow: 0 1px 1px #f7937f;
+}
+
+textarea {
+    background: var(--black);
+    color: white;
+    width: 65%;
+    max-width: 85%;
+    height: 250px;
+    max-height: 300px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+span {
+    color: black;
+    text-align: left;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 8px;
+}
+
+div .item {
+    padding: 3px;
+}
+
+.container {
+    background: white;
+    color: black;
+    font-family: 'Arial', Times, serif;
+    text-align: center;
+    border-radius: 10px;
+    width: 85vw;
+    height: 95vh;
+    margin: auto;
+    padding: 10px;
+}
+
+.container2 {
+    background: white;
+    color: black;
+    font-family: 'Arial', Times, serif;
+    border-radius: 10px;
+    width: 85vw;
+    height: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+.content {
+    padding: 5px;
+    height: 85%;
+    margin: auto;
+}
+
+.social-links li {
+    margin-left: 6px;
+    float: right;
+}
+
+.social-links li a {
+    color: var(--blue);
+}
+
+.social-links li a:hover {
+    color: #f95738;
+}

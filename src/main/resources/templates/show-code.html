@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Code</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container2">
+    <div>
+        <span id="load_date" th:text="${#temporals.format(codeSnippet.getDate(), 'yyyy-MM-dd HH:mm:ss')}"></span>
+        <p>
+                <span th:if="${codeSnippet.isViewRestricted() == true}">
+                    <span id="views_restriction" th:text="${codeSnippet.getViews()}"></span> more views allowed
+                </span>
+        </p>
+        <span th:if="${codeSnippet.isTimeRestricted() == true}">
+                <p>
+                The code will be available for <span  id="time_restriction" th:text="${codeSnippet.getTime()}"></span> seconds
+                </p>
+            </span>
+        <pre id="code_snippet"><code th:text="${codeSnippet.getCode()}"></code></pre>
+    </div>
+    <div>
+        <footer>
+
+            <ul class="social-links">
+                <p class="copyright"><small>&copy; <time datetime="2021-12-20">2021</time> - Code Sharing Platform - Developed by Caio Tayota</small></p>
+                <li>
+                    <a href="https://github.com/caiotayota" target="_blank">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/caiotayota/" target="_blank">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</div>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://kit.fontawesome.com/54f159ba8f.js" crossorgin="anonymous"></script>
+</body>
+</html>
